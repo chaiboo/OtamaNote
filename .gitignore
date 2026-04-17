@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# copyrighted audio — not for redistribution
+static/audio/roja.mp3
+static/audio/chinnanjiru_kuyile.mp3
+static/audio/kuttanadan_punjayile.mp3
+static/audio/humma_humma.mp3

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otamatone Transcriber</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='62' r='30' fill='%23222'/><rect x='46' y='10' width='8' height='40' fill='%23222'/><circle cx='42' cy='58' r='4' fill='white'/><circle cx='58' cy='58' r='4' fill='white'/></svg>">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="sky">
+    <span class="sparkle sp1">✦</span>
+    <span class="sparkle sp2">✿</span>
+    <span class="sparkle sp3">♪</span>
+    <span class="sparkle sp4">✦</span>
+    <span class="sparkle sp5">♫</span>
+    <span class="sparkle sp6">✿</span>
+</div>
+
+<div class="container">
+
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">
+                <svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true">
+                    <rect x="46" y="8" width="8" height="42" rx="4" fill="#1a1a1a"/>
+                    <circle cx="50" cy="62" r="30" fill="#1a1a1a"/>
+                    <circle cx="42" cy="58" r="5" fill="#fff"/>
+                    <circle cx="58" cy="58" r="5" fill="#fff"/>
+                    <circle cx="42" cy="59" r="2" fill="#1a1a1a"/>
+                    <circle cx="58" cy="59" r="2" fill="#1a1a1a"/>
+                    <ellipse cx="50" cy="75" rx="10" ry="4" fill="#ff4d8f"/>
+                </svg>
+            </span>
+            <h1>OTAMA<span>TONE</span> <span class="brand-sub">TRANSCRIBER</span></h1>
+            <span class="brand-kana">オタマトーン</span>
+        </div>
+        <div class="tagline">
+            <span class="header-badge">♪ WAA WAA SINCE 2009</span>
+            <p>Melody → otamatone stem positions. Slide, sing, embarrass yourself.</p>
+        </div>
+    </header>
+
+    <main class="stage">
+
+        <!-- LEFT: tadpole simulator -->
+        <section class="sim-wrap" aria-label="Otamatone simulator">
+            <div class="sim-badge">♪ OTAMATONE SIMULATOR</div>
+
+            <div class="sim-body">
+                <!-- Decorative sparkles -->
+                <span class="deco star s-a">✦</span>
+                <span class="deco star s-b">✦</span>
+                <span class="deco note n-a">♪</span>
+                <span class="deco note n-b">♫</span>
+                <span class="deco flower f-a">✿</span>
+
+                <div class="tadpole">
+                    <div class="sim-head">
+                        <div class="head-gloss"></div>
+                        <div class="sim-eyes">
+                            <div class="eye"><div class="pupil"></div></div>
+                            <div class="eye"><div class="pupil"></div></div>
+                        </div>
+                        <div class="blush blush-l"></div>
+                        <div class="blush blush-r"></div>
+                        <div class="sim-mouth" id="sim-mouth"></div>
+                    </div>
+                    <div class="sim-stem-wrap">
+                        <div class="sim-stem" id="sim-stem">
+                            <div class="stem-shine"></div>
+                            <div class="stem-indicator" id="stem-indicator"></div>
+                        </div>
+                        <div class="stem-labels" id="stem-labels"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sim-controls">
+                <button class="sim-btn play" id="sim-play">▶ PLAY</button>
+                <button class="sim-btn stop" id="sim-stop">■ STOP</button>
+                <div class="sim-tempo">
+                    <span>SPEED</span>
+                    <input type="range" id="sim-tempo" min="0.25" max="2" value="1" step="0.25">
+                    <span id="sim-tempo-val">1x</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT: controls (hidden when results active) -->
+        <section class="panel panel-controls">
+
+            <div class="controls-row">
+                <div class="control-group">
+                    <label class="ctrl-label" for="model-select">MODEL</label>
+                    <select id="model-select" class="model-select">
+                        {% for id, model in models.items() %}
+                        <option value="{{ id }}" {% if id == 'neo' %}selected{% endif %}>{{ model.name }} ({{ model.low }}–{{ model.high }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label class="ctrl-label" for="duration">ANALYZE</label>
+                    <div class="dur-wrap">
+                        <input type="range" id="duration" min="10" max="120" value="60" step="5">
+                        <span class="dur-val" id="dur-val">60s</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-tabs">
+                    <button class="input-tab active" data-tab="youtube">▸ YOUTUBE</button>
+                    <button class="input-tab" data-tab="upload">▸ UPLOAD</button>
+                </div>
+
+                <div id="tab-youtube" class="tab-content active">
+                    <input type="text" class="url-input" id="youtube-url"
+                        placeholder="paste youtube url here..."
+                        spellcheck="false" autocomplete="off">
+                    <div class="yt-warning">YouTube may block downloads — try a preset below if it fails.</div>
+                </div>
+
+                <div id="tab-upload" class="tab-content">
+                    <div class="file-drop" id="file-drop">
+                        <span class="drop-txt">drop audio or <strong>click to browse</strong></span>
+                        <span class="file-name" id="file-name"></span>
+                    </div>
+                    <input type="file" id="file-input" accept="audio/*,.mp3,.wav,.ogg,.flac,.m4a" hidden>
+                </div>
+            </div>
+
+            <div class="presets">
+                <span class="presets-label">♪ PRESETS</span>
+                <div class="preset-grid">
+                    <button class="preset-btn" data-file="twinkle_twinkle.ogg">Twinkle Twinkle</button>
+                    <button class="preset-btn" data-file="fur_elise.ogg">Für Elise</button>
+                    <button class="preset-btn" data-file="happy_birthday.ogg">Happy Birthday</button>
+                    <button class="preset-btn" data-file="liu_shui.ogg" title="Flowing Water — Guqin">流水 · Liu Shui</button>
+                    <button class="preset-btn" data-file="jiu_kuang.ogg" title="Drunken Ecstasy — Guqin">酒狂 · Jiu Kuang</button>
+                    <button class="preset-btn" data-file="kojo_no_tsuki.ogg" title="Moon over the Ruined Castle — Taki Rentarō, koto">荒城の月 · Kōjō no Tsuki</button>
+                    <button class="preset-btn" data-notes="roja.json" title="Roja Jaaneman — pre-transcribed from a flute cover">ரோஜா · Roja</button>
+                    <button class="preset-btn" data-notes="chinnanjiru_kuyile.json" title="Chinnanjiru Kuyile — pre-transcribed">சின்னஞ்சிறு குயிலே · Chinnanjiru Kuyile</button>
+                    <button class="preset-btn" data-notes="kuttanadan_punjayile.json" title="Kuttanadan Punjayile — pre-transcribed">കുട്ടനാടൻ പുഞ്ചയിലെ · Kuttanadan Punjayile</button>
+                    <button class="preset-btn" data-notes="humma_humma.json" title="Humma Humma — pre-transcribed">हुम्मा हुम्मा · Humma Humma</button>
+                </div>
+            </div>
+
+            <button class="go-btn" id="convert-btn">♪ TRANSCRIBE ♪</button>
+
+            <div class="note-bar">
+                Best with <em>simple solo melodies</em> <span class="timing-warn">(timing often drifts — the notes are right, rhythm is approximate)</span>. Drag your finger where the pink dot lands.
+            </div>
+
+            <div class="error-msg" id="error-msg"></div>
+
+            <div class="loading-state" id="loading">
+                <div class="loader"></div>
+                <div>listening...</div>
+            </div>
+        </section>
+
+        <!-- RIGHT (replaces controls): results -->
+        <section class="panel panel-results results" id="results">
+            <div class="result-header">
+                <div class="result-title" id="result-title"></div>
+                <div class="result-meta" id="result-meta"></div>
+                <button class="back-btn" id="results-back" title="New transcription">↶ NEW</button>
+            </div>
+
+            <div class="seq-box">
+                <div class="seq-top">
+                    <span class="section-label">♪ NOTE SEQUENCE</span>
+                    <span class="seq-hint">click play · shift+click delete</span>
+                </div>
+                <div class="seq-numbers" id="seq-numbers"></div>
+                <div class="seq-actions">
+                    <button class="seq-btn" id="seq-clear">✕ CLEAR</button>
+                </div>
+            </div>
+
+            <div class="result-actions">
+                <button class="action-btn" id="timeline-toggle">⏱ TIMELINE</button>
+                <button class="action-btn" id="copy-notes">⎘ NOTES</button>
+                <button class="action-btn" id="copy-full">⎘ W/ TIMING</button>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <div class="timeline-row t-header">
+                    <span>TIME</span><span>NOTE</span><span>STEM %</span><span>ORIG</span>
+                </div>
+                <div id="timeline-body"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        ♪ pitch via basic-pitch · waa waa waa · <span class="foot-kana">オタマトーン</span> ♪
+    </footer>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

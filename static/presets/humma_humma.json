@@ -1,0 +1,286 @@
+{
+  "high": "C6",
+  "low": "C4",
+  "model": "Otamatone Neo",
+  "model_id": "neo",
+  "notes": [
+    {
+      "note": "C6",
+      "original_note": "C6",
+      "percent": 100.0,
+      "time": 20.388
+    },
+    {
+      "note": "Bb5",
+      "original_note": "Bb5",
+      "percent": 91.7,
+      "time": 21.166
+    },
+    {
+      "note": "C6",
+      "original_note": "C6",
+      "percent": 100.0,
+      "time": 21.677
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 22.596
+    },
+    {
+      "note": "C6",
+      "original_note": "C6",
+      "percent": 100.0,
+      "time": 22.781
+    },
+    {
+      "note": "C6",
+      "original_note": "D6",
+      "percent": 100.0,
+      "time": 24.35
+    },
+    {
+      "note": "C6",
+      "original_note": "F6",
+      "percent": 100.0,
+      "time": 25.72
+    },
+    {
+      "note": "C6",
+      "original_note": "C6",
+      "percent": 100.0,
+      "time": 27.672
+    },
+    {
+      "note": "E5",
+      "original_note": "E5",
+      "percent": 66.7,
+      "time": 28.021
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 28.602
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 29.089
+    },
+    {
+      "note": "Bb5",
+      "original_note": "Bb5",
+      "percent": 91.7,
+      "time": 31.285
+    },
+    {
+      "note": "C6",
+      "original_note": "C6",
+      "percent": 100.0,
+      "time": 31.785
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 32.401
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 32.877
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 34.457
+    },
+    {
+      "note": "F4",
+      "original_note": "F4",
+      "percent": 20.8,
+      "time": 35.49
+    },
+    {
+      "note": "G4",
+      "original_note": "G4",
+      "percent": 29.2,
+      "time": 36.966
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 37.43
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 37.792
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 38.175
+    },
+    {
+      "note": "C4",
+      "original_note": "C4",
+      "percent": 0.0,
+      "time": 38.442
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 38.732
+    },
+    {
+      "note": "C4",
+      "original_note": "C4",
+      "percent": 0.0,
+      "time": 39.58
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 39.941
+    },
+    {
+      "note": "Bb5",
+      "original_note": "Bb5",
+      "percent": 91.7,
+      "time": 40.254
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 40.591
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 44.204
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 45.342
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 45.726
+    },
+    {
+      "note": "D4",
+      "original_note": "D4",
+      "percent": 8.3,
+      "time": 49.28
+    },
+    {
+      "note": "C4",
+      "original_note": "C4",
+      "percent": 0.0,
+      "time": 50.489
+    },
+    {
+      "note": "F4",
+      "original_note": "F4",
+      "percent": 20.8,
+      "time": 50.768
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 51.104
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 51.534
+    },
+    {
+      "note": "F4",
+      "original_note": "F4",
+      "percent": 20.8,
+      "time": 53.312
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 53.521
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 53.951
+    },
+    {
+      "note": "D5",
+      "original_note": "D5",
+      "percent": 58.3,
+      "time": 54.636
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 55.437
+    },
+    {
+      "note": "F4",
+      "original_note": "F4",
+      "percent": 20.8,
+      "time": 55.81
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 56.008
+    },
+    {
+      "note": "C4",
+      "original_note": "C4",
+      "percent": 0.0,
+      "time": 56.472
+    },
+    {
+      "note": "D4",
+      "original_note": "D4",
+      "percent": 8.3,
+      "time": 57.785
+    },
+    {
+      "note": "E4",
+      "original_note": "E4",
+      "percent": 16.7,
+      "time": 58.493
+    },
+    {
+      "note": "C5",
+      "original_note": "C5",
+      "percent": 50.0,
+      "time": 59.911
+    }
+  ],
+  "title": "humma_humma.mp3",
+  "transposed": ""
+}
