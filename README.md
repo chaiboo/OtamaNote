@@ -1,5 +1,5 @@
 ---
-title: OtamoNote
+title: Otamanote
 emoji: 🎵
 colorFrom: pink
 colorTo: yellow
@@ -9,7 +9,7 @@ pinned: false
 license: mit
 ---
 
-# OtamoNote
+# Otamanote
 
 Drops any melody onto an otamatone's continuous pitch stem so you can actually play it on one. Upload audio or paste a YouTube URL — the app runs [basic-pitch](https://github.com/spotify/basic-pitch) for pitch detection, auto-transposes into the instrument's range, and plots each note as a percentage along the stem.
 
