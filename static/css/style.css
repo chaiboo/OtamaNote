@@ -444,27 +444,29 @@ body {
 }
 
 .stem-labels {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2px 0;
+    position: relative;
+    width: 42px;
     height: 360px;
-    font-size: 0.78rem;
     font-weight: 700;
     color: var(--ink-soft);
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .stem-labels span {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
     background: var(--cream);
-    padding: 2px 8px;
+    padding: 1px 7px;
     border-radius: 999px;
     border: 2px solid var(--ink);
-    font-size: 0.7rem;
+    font-size: 0.62rem;
     box-shadow: 2px 2px 0 var(--ink);
+    white-space: nowrap;
+    line-height: 1.1;
 }
+.stem-labels span.c-mark { background: var(--yellow); }
 .stem-labels span.hi { background: var(--pink); color: #fff; }
-.stem-labels span:last-child { background: var(--aqua); color: var(--ink); }
 
 /* ── SIM CONTROLS (bottom bar) ── */
 .sim-controls {

@@ -105,27 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildStemLabels() {
         const labels = document.getElementById('stem-labels');
         labels.innerHTML = '';
-        // Show every C from high to low (top to bottom)
+        const naturals = new Set([0, 2, 4, 5, 7, 9, 11]); // C D E F G A B
         const span = state.highMidi - state.lowMidi;
         const markers = [];
         for (let m = state.highMidi; m >= state.lowMidi; m--) {
-            const idx = (m - 12) % 12;
-            if (idx === 0) markers.push(m); // C notes
-        }
-        if (markers.length < 3) {
-            // Fall back: 5 evenly spaced markers
-            markers.length = 0;
-            for (let i = 0; i <= 4; i++) {
-                markers.push(Math.round(state.highMidi - (span * i / 4)));
-            }
+            if (naturals.has((m - 12) % 12)) markers.push(m);
         }
         markers.forEach((midi, i) => {
             const octave = Math.floor((midi - 12) / 12);
             const idx = (midi - 12) % 12;
-            const span = document.createElement('span');
-            span.textContent = `${NOTE_NAMES[idx]}${octave}`;
-            if (i === 0) span.className = 'hi';
-            labels.appendChild(span);
+            const pctFromTop = 100 - ((midi - state.lowMidi) / Math.max(1, span)) * 100;
+            const el = document.createElement('span');
+            el.textContent = `${NOTE_NAMES[idx]}${octave}`;
+            el.style.top = pctFromTop + '%';
+            if (idx === 0) el.className = i === 0 ? 'hi c-mark' : 'c-mark';
+            labels.appendChild(el);
         });
     }
 
