@@ -445,9 +445,9 @@ body {
 
 .stem-labels {
     position: relative;
-    width: 48px;
+    width: 40px;
     height: 360px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--ink-soft);
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
@@ -456,7 +456,7 @@ body {
     position: absolute;
     left: 0;
     transform: translateY(-50%);
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     color: var(--ink-soft);
     white-space: nowrap;
     line-height: 1;
@@ -473,16 +473,18 @@ body {
     transform: translateY(-50%);
 }
 .stem-labels span.c-mark {
-    background: var(--yellow);
-    padding: 2px 8px 2px 8px;
-    border-radius: 999px;
-    border: 2px solid var(--ink);
-    font-size: 0.68rem;
-    color: var(--ink);
-    box-shadow: 2px 2px 0 var(--ink);
+    font-weight: 900;
+    font-size: 0.7rem;
+    color: var(--pink-hot);
 }
-.stem-labels span.c-mark::before { display: none; }
-.stem-labels span.hi { background: var(--pink); color: #fff; }
+.stem-labels span.c-mark::before {
+    width: 10px;
+    height: 3px;
+    background: var(--pink-hot);
+}
+.stem-labels span.hi {
+    color: var(--pink-hot);
+}
 
 /* ── SIM CONTROLS (bottom bar) ── */
 .sim-controls {
