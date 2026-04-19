@@ -118,11 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const el = document.createElement('span');
             el.textContent = `${NOTE_NAMES[idx]}${octave}`;
             el.style.top = pctFromTop + '%';
-            if (pctFromTop < 0.5) {
-                el.style.transform = 'translateY(0)';
-            } else if (pctFromTop > 99.5) {
-                el.style.transform = 'translateY(-100%)';
-            }
             if (idx === 0) el.className = i === 0 ? 'hi c-mark' : 'c-mark';
             labels.appendChild(el);
         });
