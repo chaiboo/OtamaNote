@@ -31,10 +31,21 @@ OTAMATONE_MODELS = {
 }
 
 NOTE_NAMES = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B']
+NATURAL_IDX = {0, 2, 4, 5, 7, 9, 11}  # C D E F G A B — the notes labeled on the otamatone stem
 NOTE_TO_MIDI = {}
 for octave in range(0, 9):
     for i, name in enumerate(NOTE_NAMES):
         NOTE_TO_MIDI[f"{name}{octave}"] = 12 + octave * 12 + i
+
+
+def snap_to_natural(midi):
+    """Snap a midi number to the nearest natural (C/D/E/F/G/A/B). On ties, prefer lower."""
+    for d in range(0, 7):
+        for sign in ((-1, 1) if d > 0 else (1,)):
+            cand = midi + d * sign
+            if cand % 12 in NATURAL_IDX:
+                return cand
+    return midi
 
 
 def midi_to_note_name(midi):
@@ -75,18 +86,21 @@ def auto_transpose(melody_notes, low_midi, high_midi):
 
 
 def map_to_position(note_name, low_midi, high_midi):
-    """Map a note to (clamped_note, percent_along_stem).
+    """Map a note to (snapped_note, percent_along_stem).
 
     Otamatone stem: 0% = bottom (low note), 100% = top (high note).
-    Clamps out-of-range notes to the nearest endpoint.
+    Clamps out-of-range notes to the nearest endpoint, then snaps to the
+    nearest natural (C/D/E/F/G/A/B) — sharps/flats aren't labeled on the stem.
     """
     midi = NOTE_TO_MIDI.get(note_name)
     if midi is None:
         return None, None
     clamped = max(low_midi, min(high_midi, midi))
+    snapped = snap_to_natural(clamped)
+    snapped = max(low_midi, min(high_midi, snapped))
     span = max(1, high_midi - low_midi)
-    percent = round(((clamped - low_midi) / span) * 100, 1)
-    return midi_to_note_name(clamped), percent
+    percent = round(((snapped - low_midi) / span) * 100, 1)
+    return midi_to_note_name(snapped), percent
 
 
 def extract_melody(audio_path, max_duration=120):
@@ -248,13 +262,16 @@ def convert():
         result = []
         for n in melody:
             played_note, percent = map_to_position(n["note"], low_midi, high_midi)
-            if played_note is not None:
-                result.append({
-                    "time": n["time"],
-                    "original_note": n["note"],
-                    "note": played_note,
-                    "percent": percent,
-                })
+            if played_note is None:
+                continue
+            if result and result[-1]["note"] == played_note:
+                continue
+            result.append({
+                "time": n["time"],
+                "original_note": n["note"],
+                "note": played_note,
+                "percent": percent,
+            })
 
         transposed_msg = ""
         if octave_shift != 0:

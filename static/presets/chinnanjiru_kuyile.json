@@ -5,658 +5,556 @@
   "model_id": "neo",
   "notes": [
     {
-      "note": "C4",
+      "time": 4.403,
       "original_note": "D3",
-      "percent": 0.0,
-      "time": 4.403
-    },
-    {
       "note": "C4",
-      "original_note": "Bb3",
-      "percent": 0.0,
-      "time": 5.866
+      "percent": 0.0
     },
     {
-      "note": "C4",
-      "original_note": "A3",
-      "percent": 0.0,
-      "time": 6.262
-    },
-    {
-      "note": "G4",
+      "time": 6.749,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 6.749
+      "note": "G4",
+      "percent": 29.2
     },
     {
-      "note": "F#4",
+      "time": 7.248,
       "original_note": "F#4",
-      "percent": 25.0,
-      "time": 7.248
+      "note": "F4",
+      "percent": 20.8
     },
     {
-      "note": "G4",
+      "time": 7.806,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 7.806
+      "note": "G4",
+      "percent": 29.2
     },
     {
-      "note": "D4",
+      "time": 9.119,
       "original_note": "D4",
-      "percent": 8.3,
-      "time": 9.119
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 10.084
-    },
-    {
-      "note": "F4",
-      "original_note": "F4",
-      "percent": 20.8,
-      "time": 10.746
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 11.024
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 11.582
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 13.742
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 15.636
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 15.951
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 16.137
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 16.438
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 17.379
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 17.727
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 18.135
-    },
-    {
-      "note": "F#4",
-      "original_note": "F#4",
-      "percent": 25.0,
-      "time": 18.588
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 19.133
-    },
-    {
-      "note": "F4",
-      "original_note": "F4",
-      "percent": 20.8,
-      "time": 21.468
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 21.723
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 22.108
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 24.408
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 25.488
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 27.917
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 28.3
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 28.695
-    },
-    {
-      "note": "F#4",
-      "original_note": "F#4",
-      "percent": 25.0,
-      "time": 29.101
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 29.74
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 31.064
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 31.726
-    },
-    {
-      "note": "F4",
-      "original_note": "F4",
-      "percent": 20.8,
-      "time": 31.936
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 32.215
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 32.401
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 36.896
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 37.059
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 37.349
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 38.256
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 38.662
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 39.011
-    },
-    {
-      "note": "F#4",
-      "original_note": "F#4",
-      "percent": 25.0,
-      "time": 39.487
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 39.999
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 42.287
-    },
-    {
       "note": "D4",
-      "original_note": "D4",
-      "percent": 8.3,
-      "time": 45.586
+      "percent": 8.3
     },
     {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 48.201
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 48.526
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 52.301
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 55.973
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 56.902
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 57.285
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 58.203
-    },
-    {
-      "note": "G4",
+      "time": 10.084,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 58.795
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 60.004
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 60.944
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 61.153
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 62.118
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 62.501
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 62.977
-    },
-    {
       "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 10.746,
+      "original_note": "F4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 11.024,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 64.267
+      "note": "G4",
+      "percent": 29.2
     },
     {
-      "note": "B4",
+      "time": 11.582,
       "original_note": "B4",
-      "percent": 45.8,
-      "time": 66.103
+      "note": "B4",
+      "percent": 45.8
     },
     {
-      "note": "C5",
+      "time": 13.742,
       "original_note": "C5",
-      "percent": 50.0,
-      "time": 67.276
+      "note": "C5",
+      "percent": 50.0
     },
     {
-      "note": "B4",
+      "time": 15.636,
       "original_note": "B4",
-      "percent": 45.8,
-      "time": 68.229
+      "note": "B4",
+      "percent": 45.8
     },
     {
-      "note": "A4",
+      "time": 15.951,
       "original_note": "A4",
-      "percent": 37.5,
-      "time": 71.272
+      "note": "A4",
+      "percent": 37.5
     },
     {
-      "note": "Bb4",
+      "time": 18.135,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 18.588,
+      "original_note": "F#4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 19.133,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 21.468,
+      "original_note": "F4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 21.723,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 22.108,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 24.408,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 25.488,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 28.695,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 29.101,
+      "original_note": "F#4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 29.74,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 31.064,
       "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 71.54
-    },
-    {
       "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 72.411
+      "percent": 37.5
     },
     {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 72.794
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 76.059
-    },
-    {
-      "note": "E4",
+      "time": 31.726,
       "original_note": "E4",
-      "percent": 16.7,
-      "time": 76.988
+      "note": "E4",
+      "percent": 16.7
     },
     {
-      "note": "A4",
+      "time": 31.936,
+      "original_note": "F4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 32.215,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 32.401,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 36.896,
       "original_note": "A4",
-      "percent": 37.5,
-      "time": 77.965
+      "note": "A4",
+      "percent": 37.5
     },
     {
-      "note": "C5",
+      "time": 39.011,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 39.487,
+      "original_note": "F#4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 39.999,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 42.287,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 45.586,
+      "original_note": "D4",
+      "note": "D4",
+      "percent": 8.3
+    },
+    {
+      "time": 48.201,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 48.526,
       "original_note": "C5",
-      "percent": 50.0,
-      "time": 78.232
+      "note": "C5",
+      "percent": 50.0
     },
     {
-      "note": "E5",
+      "time": 52.301,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 55.973,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 56.902,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 57.285,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 58.203,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 58.795,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 60.004,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 60.944,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 61.153,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 62.118,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 62.501,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 62.977,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 64.267,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 66.103,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 67.276,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 68.229,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 71.272,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 72.794,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 76.059,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 76.988,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 77.965,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 78.232,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 79.253,
       "original_note": "E5",
-      "percent": 66.7,
-      "time": 79.253
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 81.45
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 82.205
-    },
-    {
-      "note": "F4",
-      "original_note": "F4",
-      "percent": 20.8,
-      "time": 82.867
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 83.041
-    },
-    {
-      "note": "C5",
-      "original_note": "C5",
-      "percent": 50.0,
-      "time": 83.285
-    },
-    {
       "note": "E5",
+      "percent": 66.7
+    },
+    {
+      "time": 81.45,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 82.205,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 82.867,
+      "original_note": "F4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 83.041,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 83.285,
+      "original_note": "C5",
+      "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 85.329,
       "original_note": "E5",
-      "percent": 66.7,
-      "time": 85.329
+      "note": "E5",
+      "percent": 66.7
     },
     {
-      "note": "B4",
+      "time": 86.561,
       "original_note": "B4",
-      "percent": 45.8,
-      "time": 86.561
+      "note": "B4",
+      "percent": 45.8
     },
     {
-      "note": "C5",
+      "time": 87.351,
       "original_note": "C5",
-      "percent": 50.0,
-      "time": 87.351
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 88.548
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 90.302
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 90.534
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 91.731
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 92.022
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 92.451
-    },
-    {
-      "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 93.521
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 94.217
-    },
-    {
-      "note": "F#4",
-      "original_note": "F#4",
-      "percent": 25.0,
-      "time": 94.612
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 95.158
-    },
-    {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 97.237
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 97.598
-    },
-    {
-      "note": "B4",
-      "original_note": "B4",
-      "percent": 45.8,
-      "time": 98.248
-    },
-    {
       "note": "C5",
+      "percent": 50.0
+    },
+    {
+      "time": 88.548,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 90.302,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 90.534,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 91.731,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 92.451,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 93.521,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 94.217,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 94.612,
+      "original_note": "F#4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 95.158,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 97.237,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 97.598,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 98.248,
+      "original_note": "B4",
+      "note": "B4",
+      "percent": 45.8
+    },
+    {
+      "time": 100.223,
       "original_note": "C5",
-      "percent": 50.0,
-      "time": 100.223
+      "note": "C5",
+      "percent": 50.0
     },
     {
-      "note": "A4",
+      "time": 101.688,
       "original_note": "A4",
-      "percent": 37.5,
-      "time": 101.688
-    },
-    {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 102.883
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 103.639
-    },
-    {
-      "note": "F#4",
-      "original_note": "F#4",
-      "percent": 25.0,
-      "time": 104.092
-    },
-    {
-      "note": "G4",
-      "original_note": "G4",
-      "percent": 29.2,
-      "time": 104.719
-    },
-    {
-      "note": "D4",
-      "original_note": "D4",
-      "percent": 8.3,
-      "time": 109.274
-    },
-    {
       "note": "A4",
-      "original_note": "A4",
-      "percent": 37.5,
-      "time": 111.551
+      "percent": 37.5
     },
     {
-      "note": "Bb4",
-      "original_note": "Bb4",
-      "percent": 41.7,
-      "time": 112.932
-    },
-    {
-      "note": "G4",
+      "time": 103.639,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 113.596
+      "note": "G4",
+      "percent": 29.2
     },
     {
-      "note": "F#4",
+      "time": 104.092,
       "original_note": "F#4",
-      "percent": 25.0,
-      "time": 114.072
+      "note": "F4",
+      "percent": 20.8
     },
     {
-      "note": "G4",
+      "time": 104.719,
       "original_note": "G4",
-      "percent": 29.2,
-      "time": 114.629
+      "note": "G4",
+      "percent": 29.2
     },
     {
-      "note": "E4",
-      "original_note": "E4",
-      "percent": 16.7,
-      "time": 118.544
-    },
-    {
-      "note": "D4",
+      "time": 109.274,
       "original_note": "D4",
-      "percent": 8.3,
-      "time": 119.613
+      "note": "D4",
+      "percent": 8.3
     },
     {
-      "note": "E4",
+      "time": 111.551,
+      "original_note": "A4",
+      "note": "A4",
+      "percent": 37.5
+    },
+    {
+      "time": 113.596,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 114.072,
+      "original_note": "F#4",
+      "note": "F4",
+      "percent": 20.8
+    },
+    {
+      "time": 114.629,
+      "original_note": "G4",
+      "note": "G4",
+      "percent": 29.2
+    },
+    {
+      "time": 118.544,
       "original_note": "E4",
-      "percent": 16.7,
-      "time": 119.904
+      "note": "E4",
+      "percent": 16.7
+    },
+    {
+      "time": 119.613,
+      "original_note": "D4",
+      "note": "D4",
+      "percent": 8.3
+    },
+    {
+      "time": 119.904,
+      "original_note": "E4",
+      "note": "E4",
+      "percent": 16.7
     }
   ],
   "title": "chinnanjiru_kuyile.mp3",
